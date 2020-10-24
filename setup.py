@@ -28,6 +28,13 @@ setuptools.setup(
         'sentry_sdk',
 
     ],
+    extras_require={
+        'dev': [
+            'pytest',
+            'requests',
+        ]
+    },
+
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: Other/Proprietary License',
