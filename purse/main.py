@@ -1,10 +1,7 @@
-from typing import Optional
-
 from fastapi import FastAPI
 
+from purse.monobank.routers import monobank_router
+
+
 app = FastAPI()
-
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+app.include_router(monobank_router)
